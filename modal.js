@@ -19,11 +19,32 @@ class Modal extends HTMLElement {
           top: 15vh;
           left: 25%;
           width: 50%;
-          height: 30rem;
           z-index: 100;
           background: white;
           border-radius: 3px;
           border-shadow: 0 2px 8px rgba(0,0,0,0.26);
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+
+        header {
+          padding: 1rem;
+        }
+
+        header h1 {
+          font-size: 1.25rem;
+        }
+
+        #actions {
+          border-top: 1px solid #ccc;
+          padding: 1rem;
+          display: flex;
+          justify-content: flex-end;
+        }
+
+        #actions button {
+          margin: 0 0.25rem;
         }
       </style>
       <div id="backdrop"></div>
