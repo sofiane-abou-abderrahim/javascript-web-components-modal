@@ -76,6 +76,10 @@ class Modal extends HTMLElement {
   }
 
   attributeChangedCallback(name, oldValue, newValue) {}
+
+  static get observedAttributes() {
+    return ['opened'];
+  }
 }
 
 customElements.define('uc-modal', Modal);
