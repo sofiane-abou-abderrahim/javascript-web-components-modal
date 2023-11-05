@@ -36,6 +36,14 @@ class Modal extends HTMLElement {
           font-size: 1.25rem;
         }
 
+        #main {
+          padding: 1rem;
+        }
+
+        ::slotted(p) {
+          font-size: 1rem;
+        }
+
         #actions {
           border-top: 1px solid #ccc;
           padding: 1rem;
