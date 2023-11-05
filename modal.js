@@ -27,7 +27,18 @@ class Modal extends HTMLElement {
         }
       </style>
       <div id="backdrop"></div>
-      <div id="modal"></div>
+      <div id="modal">
+        <header>
+          <h1>Please Confirm</h1>
+        </header>
+        <section id="main">
+          <slot></slot>
+        </section>
+        <section id="actions">
+          <button>Cancel</button>
+          <button>Okay</button>
+        </section>
+      </div>
     `;
   }
 }
