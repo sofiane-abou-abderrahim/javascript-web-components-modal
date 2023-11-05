@@ -74,6 +74,8 @@ class Modal extends HTMLElement {
       </div>
     `;
   }
+
+  attributeChangedCallback(name, oldValue, newValue) {}
 }
 
 customElements.define('uc-modal', Modal);
