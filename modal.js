@@ -2,6 +2,7 @@ class Modal extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
+    this.isOpen = false;
     this.shadowRoot.innerHTML = `
       <style>
         #backdrop {
@@ -98,6 +99,7 @@ class Modal extends HTMLElement {
 
   open() {
     this.setAttribute('opened', '');
+    this.isOpen = true;
   }
 }
 
