@@ -119,7 +119,7 @@ class Modal extends HTMLElement {
     this.isOpen = false;
   }
 
-  _cancel() {
+  _cancel(event) {
     this.hide();
   }
 
