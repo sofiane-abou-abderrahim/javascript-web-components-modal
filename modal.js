@@ -121,6 +121,7 @@ class Modal extends HTMLElement {
 
   _cancel(event) {
     this.hide();
+    event.target.dispatchEvent();
   }
 
   _confirm() {
